@@ -96,10 +96,6 @@ nav ul {
     gap: 2rem;
 }
 
-nav a {
-    font-weight: bold;
-}
-
 /* --- BOTTONI --- */
 button,
 .btn {
