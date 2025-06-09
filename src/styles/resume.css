@@ -1,0 +1,69 @@
+.resume {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+    color: var(--third-color);
+    margin-bottom: 0.5rem;
+}
+
+.resume-header p {
+    font-size: 1.2rem;
+    color: var(--fourth-color);
+    opacity: 0.8;
+}
+
+.download-btn {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.resume-section {
+    margin-bottom: 3rem;
+}
+
+.resume-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--third-color);
+    padding-left: 0.75rem;
+}
+
+.resume-section p,
+.resume-section li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.resume-section ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.resume-section li {
+    margin-bottom: 0.3rem;
+    list-style-type: "▸ ";
+}
+
+.project-title {
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+.cv-download {
+    text-align: center;
+    margin-top: 2rem;
+}
+.see-projects-btn {
+    margin-top: 1.5rem;
+    display: inline-block;
+}
