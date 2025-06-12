@@ -8,7 +8,7 @@ export default function ContactPage() {
                 <p>Hai un’idea o vuoi collaborare? Scrivimi un messaggio!</p>
             </section>
 
-            <form
+            {/* <form
                 name="contact"
                 method="POST"
                 data-netlify="true"
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 <p>
                     <button type="submit">Invia</button>
                 </p>
-            </form>
+            </form> */}
 
         </main>
 
