@@ -9,6 +9,7 @@ export default function ContactPage() {
             </section>
 
             <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <p>
                     <label htmlFor="name">Nome:</label>
                     <input type="text" name="name" id="name" />
