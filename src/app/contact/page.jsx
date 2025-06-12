@@ -8,37 +8,23 @@ export default function ContactPage() {
                 <p>Hai un’idea o vuoi collaborare? Scrivimi un messaggio!</p>
             </section>
 
-            {/* <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-            >
-                <input type="hidden" name="form-name" value="contact" />
-                <p hidden>
-                    <label>
-                        Non compilare questo campo: <input name="bot-field" />
-                    </label>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label htmlFor="name">Nome:</label>
+                    <input type="text" name="name" id="name" />
                 </p>
                 <p>
-                    <label>Nome:<br />
-                        <input type="text" name="name" required />
-                    </label>
+                    <label htmlFor="email">email:</label>
+                    <input type="text" name="email" id="email" />
                 </p>
                 <p>
-                    <label>Email:<br />
-                        <input type="email" name="email" required />
-                    </label>
-                </p>
-                <p>
-                    <label>Messaggio:<br />
-                        <textarea name="message" required></textarea>
-                    </label>
+                    <label htmlFor="message">message:</label>
+                    <input type="text" name="message" id="message" />
                 </p>
                 <p>
                     <button type="submit">Invia</button>
                 </p>
-            </form> */}
+            </form>
 
         </main>
 
