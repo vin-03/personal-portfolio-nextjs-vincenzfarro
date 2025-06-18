@@ -10,6 +10,11 @@
     object-fit: cover;
 }
 
+.card a {
+    margin-right: 2rem;
+    color: var(--third-color);
+}
+
 .tech-list {
     display: flex;
     flex-wrap: wrap;
