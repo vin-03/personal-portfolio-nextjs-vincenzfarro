@@ -2,8 +2,8 @@ import "../../styles/resume.css";
 
 export default function ResumePage() {
     return (
-        <main className="resume">
-            <section className="resume-header">
+        <main className="page-resume page-container">
+            <section className="page-header">
                 <h1>Il mio Curriculum</h1>
                 <p>Formazione, competenze e progetti personali in evidenza.</p>
                 <a href="./cv.pdf" download className="btn download-btn">
@@ -11,7 +11,7 @@ export default function ResumePage() {
                 </a>
             </section>
 
-            <section className="resume-section">
+            <section>
                 <h2>Skills</h2>
                 <ul>
                     <li>
@@ -36,7 +36,7 @@ export default function ResumePage() {
                 </ul>
             </section>
 
-            <section className="resume-section">
+            <section>
                 <h2>Education</h2>
                 <p>
                     <strong>Laurea Triennale in Informatica</strong> –
@@ -51,7 +51,7 @@ export default function ResumePage() {
                 </p>
             </section>
 
-            <section className="resume-section">
+            <section>
                 <h2>Projects</h2>
                 <p>
                     <span className="project-title">

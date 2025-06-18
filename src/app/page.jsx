@@ -4,7 +4,7 @@ import fotoProfilo from "/public/imgs/myimg.png";
 
 export default function Home() {
     return (
-        <main>
+        <main className="page-home">
             <section className="hero">
                 <div className="hero-content">
                     <Image
@@ -24,7 +24,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section-card about">
+            <section className="card about">
                 <h2>Chi sono</h2>
                 <p>
                     Sono uno studente universitario con la passione per lo
@@ -39,7 +39,7 @@ export default function Home() {
                 </p>
             </section>
 
-            <section className="section-card contact-preview">
+            <section className="card contact-preview">
                 <h2>Contattami</h2>
                 <p>Hai un’idea? Vuoi collaborare? Scrivimi!</p>
                 <a href="/contact" className="btn">

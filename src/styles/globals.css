@@ -3,6 +3,7 @@
     --second-color: #2f3640; /* Grigio scuro ma più neutro e "pulito" */
     --third-color: #00a8e8; /* Azzurro acceso ma meno "giocattoloso" */
     --fourth-color: #eeeeee;
+    --button-color: #0076a4;
 }
 
 * {
@@ -60,40 +61,52 @@ a:hover {
     text-decoration: underline;
 }
 
-/* --- CONTAINER --- */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
 /* --- SEZIONI --- */
 section {
     padding: 80px 0;
 }
 
-/* --- SECTION CARD --- */
-.section-card {
-    max-width: 800px;
+/* --- LAYOUT PAGINE --- */
+.page-container {
+    max-width: 900px;
     margin: 4rem auto;
     padding: 2rem;
+}
+
+.page-container.narrow {
+    max-width: 600px;
+}
+
+/* --- HEADER PAGINE --- */
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--third-color);
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* --- GENERIC CARD --- */
+.card {
     background-color: var(--second-color);
     border-radius: 12px;
+    padding: 2rem;
+    margin: 4rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease;
 }
 
-/* --- HEADER E FOOTER --- */
-header,
-footer {
-    background-color: var(--second-color);
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 2rem;
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* --- BOTTONI --- */
@@ -103,12 +116,45 @@ button,
     background-color: var(--third-color);
     color: var(--fourth-color);
     padding: 0.75rem 1.5rem;
+    border: none;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
 }
 
 button:hover,
 .btn:hover {
-    background-color: #0076a4;
+    background-color: var(--button-color);
+    text-decoration: none;
+}
+
+/* --- FORM --- */
+form {
+    background-color: var(--second-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 120px;
 }

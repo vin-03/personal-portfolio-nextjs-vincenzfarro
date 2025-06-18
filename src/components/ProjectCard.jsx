@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProjectCard({ title, description, technologies, gitLink, webLink, img }) {
     return (
-        <div className="project-card">
+        <div className="card">
             <h2>{title}</h2>
             <p>{description}</p>
             <a href={gitLink} target="_blank" rel="noopener noreferrer">

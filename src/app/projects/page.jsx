@@ -1,10 +1,10 @@
 import "../../styles/projects.css";
-import ProjectCard from "@/components/ProjectCards";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function ProjectsPage() {
     return (
-        <main className="projects">
-            <section className="projects-header">
+        <main className="page-projects page-container">
+            <section className="page-header">
                 <h1>I miei Progetti</h1>
                 <p>
                     Una selezione di progetti che mostrano le mie competenze
