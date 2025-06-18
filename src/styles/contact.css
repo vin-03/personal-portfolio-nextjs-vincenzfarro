@@ -19,18 +19,14 @@
 }
 
 @media (max-width: 600px) {
-    .contact-socials {
-        align-items: center;
-        text-align: center;
-    }
-
     .contact-item {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.5rem;
     }
 
     .contact-item img {
         width: 32px;
         height: 32px;
+        margin: 0 1rem;
     }
 }

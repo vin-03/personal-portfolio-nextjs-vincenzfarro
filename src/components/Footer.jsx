@@ -2,8 +2,6 @@ export default function Footer() {
     return (
         <footer className="site-footer">
             <div className="footer-content">
-                <p>&copy; 2025 Vincenzo Farro • Tutti i diritti riservati</p>
-
                 <div className="footer-socials">
                     <div className="footer-item">
                         <img src="/imgs/icons/gmail.png" alt="Email" />
@@ -18,6 +16,7 @@ export default function Footer() {
                         <span>linkedin.com/in/vincenzo-farro</span>
                     </div>
                 </div>
+                <p>&copy; 2025 Vincenzo Farro • Tutti i diritti riservati</p>
             </div>
         </footer>
 

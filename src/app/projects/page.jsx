@@ -16,7 +16,7 @@ export default function ProjectsPage() {
                 <ProjectCard {...projectsData[1]} />
             </section>
 
-            <section className="contact-preview">
+            <section>
                 <h2>Contattami</h2>
                 <p>Hai un’idea? Vuoi collaborare? Scrivimi!</p>
                 <a href="/contact" className="btn">

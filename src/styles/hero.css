@@ -29,6 +29,10 @@
     font-size: 1.2rem;
 }
 
+.contattami {
+    padding: 2rem;
+}
+
 @media (max-width: 600px) {
     .hero-content {
         flex-direction: column;
@@ -42,8 +46,11 @@
         margin-bottom: 1rem;
     }
 
-    .section-card {
-        margin: 2rem 1rem;
+    .card {
         padding: 1.5rem;
+    }
+
+    .contattami {
+        padding: 0rem;
     }
 }

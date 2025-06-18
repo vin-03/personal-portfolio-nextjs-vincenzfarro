@@ -4,7 +4,7 @@ import fotoProfilo from "/public/imgs/myimg.png";
 
 export default function Home() {
     return (
-        <main className="page-home">
+        <main className="page-home page-container">
             <section className="hero">
                 <div className="hero-content">
                     <Image
@@ -39,7 +39,7 @@ export default function Home() {
                 </p>
             </section>
 
-            <section className="card contact-preview">
+            <section className="contattami">
                 <h2>Contattami</h2>
                 <p>Hai un’idea? Vuoi collaborare? Scrivimi!</p>
                 <a href="/contact" className="btn">
