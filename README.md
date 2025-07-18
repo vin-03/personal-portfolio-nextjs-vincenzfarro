@@ -17,7 +17,7 @@ It includes:
 - React  
 - JavaScript  
 - CSS Modules
-- Vercel (for deployment)
+- Netlify (for deployment)
 
 ## How to Run Locally
 
