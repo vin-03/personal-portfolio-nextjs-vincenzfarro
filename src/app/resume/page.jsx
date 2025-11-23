@@ -6,8 +6,11 @@ export default function ResumePage() {
             <section className="page-header">
                 <h1>Il mio Curriculum</h1>
                 <p>Formazione, competenze e progetti personali in evidenza.</p>
-                <a href="./cv.pdf" download className="btn download-btn">
-                    📄 Scarica CV in PDF
+                <a href="./cv_eng_131025.pdf" download className="btn download-btn">
+                    📄 Download CV in PDF (eng)
+                </a>
+                <a href="./cv_it_131025.pdf" download className="btn download-btn">
+                    📄 Download CV in PDF (it)
                 </a>
             </section>
 
