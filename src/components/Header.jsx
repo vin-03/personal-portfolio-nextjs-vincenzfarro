@@ -1,46 +1,54 @@
-"use client"; // se sei in App Router
+"use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import "../styles/layout.css";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const router = useRouter();
 
-    const handleNavClick = (path) => {
-        setMenuOpen(false);
-        router.push(path);
-    };
+    const handleToggleMenu = () => setMenuOpen(!menuOpen);
+    const closeMenu = () => setMenuOpen(false);
 
     return (
         <header>
             <nav className="navbar">
-                <div
-                    className="logo"
-                    onClick={() => handleNavClick("/")}
-                    role="button"
-                    tabIndex={0}
-                    onKeyDown={(e) => e.key === "Enter" && handleNavClick("/")}
-                >
-                    Vincenzo
+                <div className="logo">
+                    <Link href="/" onClick={closeMenu} prefetch={true}>
+                        Vincenzo
+                    </Link>
                 </div>
+
                 <button
                     className="menu-toggle"
                     aria-expanded={menuOpen}
-                    aria-label="Apri o chiudi menu"
-                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Open or close menu"
+                    onClick={handleToggleMenu}
                 >
                     ☰
                 </button>
+
                 <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-                    <li onClick={() => handleNavClick("/")}>Home</li>
-                    <li onClick={() => handleNavClick("/resume")}>Resume</li>
-                    <li onClick={() => handleNavClick("/projects")}>
-                        Projects
+                    <li>
+                        <Link href="/" onClick={closeMenu} prefetch={true}>
+                            Home
+                        </Link>
                     </li>
-                    <li onClick={() => handleNavClick("/contact")}>Contact</li>
+                    <li>
+                        <Link href="/resume" onClick={closeMenu} prefetch={true}>
+                            Resume
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/projects" onClick={closeMenu} prefetch={true}>
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/contact" onClick={closeMenu} prefetch={true}>
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>
