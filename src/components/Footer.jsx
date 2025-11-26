@@ -16,7 +16,7 @@ export default function Footer() {
                         <span>linkedin.com/in/vincenzo-farro</span>
                     </div>
                 </div>
-                <p>&copy; 2025 Vincenzo Farro • Tutti i diritti riservati</p>
+                <p>&copy;2025 Vincenzo Farro • All rights reserved</p>
             </div>
         </footer>
 

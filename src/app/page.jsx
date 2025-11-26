@@ -1,49 +1,51 @@
 import Image from "next/image";
 import "../styles/hero.css";
-import fotoProfilo from "/public/imgs/myimg.png";
+import profilePhoto from "/public/imgs/myimg.png";
 
 export default function Home() {
     return (
         <main className="page-home page-container">
+            {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
                     <Image
-                        src={fotoProfilo}
-                        alt="Foto di Vincenzo Farro - Full-Stack Web Developer"
+                        src={profilePhoto}
+                        alt="Photo of Vincenzo Farro - Full-Stack Web Developer"
                         width={200}
-                        height={266} // 4:3
+                        height={266}
                         className="hero-img"
                     />
                     <div className="hero-text">
-                        <h1>Ciao! Sono Vincenzo Farro</h1>
+                        <h1>Hi! I'm Vincenzo Farro</h1>
                         <p>Full-Stack Web Developer</p>
                         <a href="/projects" className="btn">
-                            Guarda i miei progetti
+                            Check out my projects
                         </a>
                     </div>
                 </div>
             </section>
 
+            {/* About Section */}
             <section className="card about">
-                <h2>Chi sono</h2>
+                <h2>About Me</h2>
                 <p>
-                    Sono uno studente universitario con la passione per lo
-                    sviluppo. Ho iniziato da autodidatta e ora sto costruendo il
-                    mio primo portfolio professionale. Mi piace imparare
-                    facendo.
+                    I'm a computer science student with a strong passion for web
+                    development. I started learning on my own and I'm now
+                    building my first professional portfolio. I love learning by
+                    doing and exploring new technologies.
                 </p>
                 <p>
-                    Voglio lavorare da remoto per poter viaggiare e scoprire
-                    nuovi posti nel mondo, continuando a crescere come
-                    sviluppatore.
+                    My goal is to work fully remote so I can travel, discover new
+                    places around the world, and keep growing as a developer.
                 </p>
             </section>
 
+            {/* Contact Section */}
             <section className="contattami">
-                <h2>Contattami</h2>
-                <p>Hai un’idea? Vuoi collaborare? Scrivimi!</p>
+                <h2>Get in Touch</h2>
+                <p>Got an idea? Want to collaborate? Let’s talk!</p>
                 <a href="/contact" className="btn">
-                    Vai alla pagina contatti
+                    Go to Contact Page
                 </a>
             </section>
         </main>
