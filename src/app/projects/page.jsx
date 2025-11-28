@@ -34,11 +34,11 @@ export default function ProjectsPage() {
 const projectsData = [
     {
         title: "Mobile Legends Draft Tool",
-        description: `A web tool built in Python that analyzes team and opponent picks during the draft phase of Mobile Legends. It uses Pandas to evaluate and filter optimal hero combinations, suggesting the best choices based on team synergy and enemy counters. Designed for competitive players and anyone looking for a tactical advantage. The project is fully documented and expandable.`,
-        technologies: ["Python", "Pandas"],
+        description: `A web application built with Next.js that helps Mobile Legends players make smarter draft decisions. It analyzes hero interactions such as counters, synergies, and anti-synergies to suggest optimal picks based on lane and team composition. Powered by custom JavaScript algorithms and data extracted from the official MLBB website, the tool delivers real-time draft insights through a clean and responsive interface.`,
+        technologies: ["Next.js", "JavaScript", "Puppeteer"],
         gitLink: "https://github.com/vin-03/mlbb-draft-assistant",
         webLink: "https://draftmlbb.com",
-        img: "/imgs/mlbbdrafttool.png"
+        img: "/imgs/Screenshot2.png"
     },
     {
         title: "Personal Web Portfolio",

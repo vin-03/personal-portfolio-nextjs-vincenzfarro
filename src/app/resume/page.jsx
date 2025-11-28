@@ -62,9 +62,10 @@ export default function ResumePage() {
                 <p>
                     <span className="project-title">Mobile Legends Draft Tool (2025):</span>
                     <br />
-                    A Python + Pandas tool designed to support the draft phase in the game Mobile Legends.
+                    A Next.js web app that helps Mobile Legends players make smarter draft decisions.
                     <br />
-                    It analyzes hero picks and suggests optimal choices based on team synergy and counters.
+                    It analyzes hero interactions and provides real-time suggestions
+                    based on lane, counters, and team synergy.
                 </p>
                 <p>
                     <span className="project-title">Personal Web Portfolio (2024):</span>
